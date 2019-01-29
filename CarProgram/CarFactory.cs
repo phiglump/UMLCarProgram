@@ -1,5 +1,5 @@
 ﻿//Author: Philippe Lumpkin
-//File: Program.cs
+//File: CarFactory.cs
 //Purpose: Main class for the program to run from
 //Date: 1/29/2019
 using System;
@@ -10,10 +10,7 @@ using System.Threading.Tasks;
 
 namespace CarProgram
 {
-    class Program
+    abstract class CarFactory
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }

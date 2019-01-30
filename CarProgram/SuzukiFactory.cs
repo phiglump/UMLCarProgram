@@ -10,7 +10,9 @@ using System.Threading.Tasks;
 
 namespace CarProgram
 {
-    class SuzukiFactory
+    class SuzukiFactory : CarFactory
     {
+        private string model = "Jimmy";
+        private int speed = 120;
     }
 }

@@ -10,7 +10,42 @@ using System.Threading.Tasks;
 
 namespace CarProgram
 {
-    class Suzuki
+    class Suzuki : Car
     {
+        private string company;
+        private string model;
+        private int speed;
+
+        public override string Company
+        {
+            get
+            {
+                return company;
+            }
+        }
+
+        public override string Model
+        {
+            get
+            {
+                return model;
+            }
+            set
+            {
+                model = "Jimmy";
+            }
+        }
+
+        public override int Speed
+        {
+            get
+            {
+                return speed;
+            }
+            set
+            {
+                speed = 130;
+            }
+        }
     }
 }

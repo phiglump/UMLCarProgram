@@ -12,5 +12,8 @@ namespace CarProgram
 {
     abstract class Car
     {
+        public virtual string Company { get; }
+        public virtual string Model { get; set; }
+        public virtual int Speed { get; set; }
     }
 }

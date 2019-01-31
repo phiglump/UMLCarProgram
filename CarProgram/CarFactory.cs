@@ -12,9 +12,6 @@ namespace CarProgram
 {
     abstract class CarFactory
     {
-        public Car GetCar()
-        {
-            Car newCar = new Car();
-        }
+        public abstract Car GetCar();
     }
 }

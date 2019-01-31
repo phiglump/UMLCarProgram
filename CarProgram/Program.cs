@@ -14,6 +14,33 @@ namespace CarProgram
     {
         static void Main(string[] args)
         {
+            CarFactory factory = null;
+            string answer;
+            Console.WriteLine("Welcome User!");
+            Console.WriteLine("Would you like a Toyota or a Suzuki?");
+            answer = Console.ReadLine();
+
+            if (answer == "Toyota" || answer == "toyota")
+            {
+                ToyotaFactory t = new ToyotaFactory();
+                factory = t;
+            }
+            else if (answer == "Suzuki" || answer == "suzuki")
+            {
+                SuzukiFactory s = new SuzukiFactory();
+                factory = s;
+            }
+            else
+            {
+                Console.WriteLine("There was an error please try again.");
+            }
+
+            CarAssembler car = new CarAssembler();
+            car.AssembleCar(factory);
+
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
         }
     }
 }
+ 

@@ -12,7 +12,7 @@ namespace CarProgram
 {
     class Toyota : Car
     {
-        private string company = "Toyota";
+        private readonly string company = "Toyota";
         private string model;
         private int speed;
 

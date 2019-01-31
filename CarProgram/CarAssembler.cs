@@ -12,5 +12,9 @@ namespace CarProgram
 {
     class CarAssembler
     {
+        public void AssembleCar(CarFactory factory)
+        {
+            factory.GetCar();
+        }
     }
 }

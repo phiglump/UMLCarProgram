@@ -12,7 +12,18 @@ namespace CarProgram
 {
     class SuzukiFactory : CarFactory
     {
-        private string model = "Jimmy";
-        private int speed = 120;
+        public override Car GetCar()
+        {
+            Suzuki sCar = new Suzuki
+            {
+                Model = "",
+                Speed = 0
+            };
+            Console.WriteLine("");
+            Console.WriteLine(sCar.Company);
+            Console.WriteLine(sCar.Model);
+            Console.WriteLine(sCar.Speed);
+            return sCar;
+        }
     }
 }

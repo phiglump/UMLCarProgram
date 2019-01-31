@@ -12,7 +12,19 @@ namespace CarProgram
 {
     class ToyotaFactory : CarFactory
     {
-        private string model = "Mirai";
-        private int speed = 111;
+        public override Car GetCar()
+        {
+
+            Toyota tCar = new Toyota
+            {
+                Model = "",
+                Speed = 0
+            };
+            Console.WriteLine("");
+            Console.WriteLine(tCar.Company);
+            Console.WriteLine(tCar.Model);
+            Console.WriteLine(tCar.Speed);
+            return tCar;
+        }
     }
 }
